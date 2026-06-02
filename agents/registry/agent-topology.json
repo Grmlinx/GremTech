@@ -1,0 +1,200 @@
+﻿[
+    {
+        "id":  "governance-officer",
+        "name":  "Governance Officer",
+        "layer":  1,
+        "reports_to":  [
+
+                       ],
+        "can_block":  true,
+        "prompt_file":  "governance/standards/expert-audit-prompts/governance-officer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Top-level guardian of scope, drift, and governing-principle alignment."
+    },
+    {
+        "id":  "project-manager",
+        "name":  "Project Manager",
+        "layer":  2,
+        "reports_to":  [
+                           "governance-officer"
+                       ],
+        "can_block":  true,
+        "prompt_file":  "governance/standards/expert-audit-prompts/project-manager-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Sequences audits, coordinates agents, and synthesizes findings."
+    },
+    {
+        "id":  "product-architect",
+        "name":  "Product Architect",
+        "layer":  2,
+        "reports_to":  [
+                           "governance-officer"
+                       ],
+        "can_block":  true,
+        "prompt_file":  "governance/standards/expert-audit-prompts/product-architect-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Frames architecture, boundaries, and implementation planning."
+    },
+    {
+        "id":  "security-engineer",
+        "name":  "Security Engineer",
+        "layer":  3,
+        "reports_to":  [
+                           "project-manager",
+                           "governance-officer"
+                       ],
+        "can_block":  true,
+        "prompt_file":  "governance/standards/expert-audit-prompts/security-engineer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Reviews trust boundaries, authority, and runtime safety."
+    },
+    {
+        "id":  "privacy-legal-compliance-reviewer",
+        "name":  "Privacy Legal Compliance Reviewer",
+        "layer":  3,
+        "reports_to":  [
+                           "project-manager",
+                           "governance-officer"
+                       ],
+        "can_block":  true,
+        "prompt_file":  "governance/standards/expert-audit-prompts/privacy-legal-compliance-reviewer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Reviews privacy, legal, and compliance control alignment."
+    },
+    {
+        "id":  "licensing-procurement-reviewer",
+        "name":  "Licensing Procurement Reviewer",
+        "layer":  3,
+        "reports_to":  [
+                           "project-manager"
+                       ],
+        "can_block":  true,
+        "prompt_file":  "governance/standards/expert-audit-prompts/licensing-procurement-reviewer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Reviews licensing, procurement, and supportability boundaries."
+    },
+    {
+        "id":  "qa-release-engineering-reviewer",
+        "name":  "QA Release Engineering Reviewer",
+        "layer":  3,
+        "reports_to":  [
+                           "project-manager"
+                       ],
+        "can_block":  true,
+        "prompt_file":  "governance/standards/expert-audit-prompts/qa-release-engineering-reviewer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Reviews deterministic validation, testing, and release gates."
+    },
+    {
+        "id":  "windows-platform-sre-operations-reviewer",
+        "name":  "Windows Platform SRE Operations Reviewer",
+        "layer":  3,
+        "reports_to":  [
+                           "project-manager"
+                       ],
+        "can_block":  true,
+        "prompt_file":  "governance/standards/expert-audit-prompts/windows-platform-sre-operations-reviewer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Reviews platform operations, recovery, and workstation/runtime assumptions."
+    },
+    {
+        "id":  "devops-engineer",
+        "name":  "DevOps Engineer",
+        "layer":  4,
+        "reports_to":  [
+                           "project-manager",
+                           "product-architect"
+                       ],
+        "can_block":  false,
+        "prompt_file":  "governance/standards/expert-audit-prompts/devops-engineer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Reviews build, delivery, automation, and environment discipline."
+    },
+    {
+        "id":  "ai-engineer",
+        "name":  "AI Engineer",
+        "layer":  4,
+        "reports_to":  [
+                           "project-manager",
+                           "product-architect"
+                       ],
+        "can_block":  false,
+        "prompt_file":  "governance/standards/expert-audit-prompts/ai-engineer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Reviews AI-facing architecture, control surfaces, and capability realism."
+    },
+    {
+        "id":  "code-reviewer",
+        "name":  "Code Reviewer",
+        "layer":  4,
+        "reports_to":  [
+                           "project-manager"
+                       ],
+        "can_block":  false,
+        "prompt_file":  "governance/standards/expert-audit-prompts/code-reviewer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Reviews correctness, maintainability, and implementation risk."
+    },
+    {
+        "id":  "prompt-engineer",
+        "name":  "Prompt Engineer",
+        "layer":  4,
+        "reports_to":  [
+                           "project-manager",
+                           "ai-engineer"
+                       ],
+        "can_block":  false,
+        "prompt_file":  "governance/standards/expert-audit-prompts/prompt-engineer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Reviews prompt/runtime alignment and wording-driven drift."
+    },
+    {
+        "id":  "dfir-expert",
+        "name":  "DFIR Expert",
+        "layer":  5,
+        "reports_to":  [
+                           "project-manager"
+                       ],
+        "can_block":  false,
+        "prompt_file":  "governance/standards/expert-audit-prompts/dfir-expert-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Domain specialist for defensibility, evidence handling, and investigation rigor."
+    },
+    {
+        "id":  "m365-entra-administrator",
+        "name":  "M365 Entra Administrator",
+        "layer":  5,
+        "reports_to":  [
+                           "project-manager"
+                       ],
+        "can_block":  false,
+        "prompt_file":  "governance/standards/expert-audit-prompts/m365-entra-administrator-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Domain specialist for M365 and Entra operational control review."
+    },
+    {
+        "id":  "incident-response-operations-client-delivery-reviewer",
+        "name":  "Incident Response Operations Client Delivery Reviewer",
+        "layer":  5,
+        "reports_to":  [
+                           "project-manager"
+                       ],
+        "can_block":  false,
+        "prompt_file":  "governance/standards/expert-audit-prompts/incident-response-operations-client-delivery-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Domain specialist for real-world delivery and operational practicality."
+    },
+    {
+        "id":  "ui-engineer",
+        "name":  "UI Engineer",
+        "layer":  6,
+        "reports_to":  [
+                           "product-architect",
+                           "project-manager"
+                       ],
+        "can_block":  false,
+        "prompt_file":  "governance/standards/expert-audit-prompts/ui-engineer-audit-prompt.md",
+        "default_output_path":  "memory/sensory/Recommendations",
+        "summary":  "Downstream experience and interface specialist operating within upstream constraints."
+    }
+]
