@@ -2,7 +2,7 @@
 
 ## Agent ID
 
-$(System.Collections.Hashtable.id)
+m365-entra-administrator
 
 ## Layer
 

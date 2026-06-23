@@ -2,7 +2,7 @@
 
 ## Agent ID
 
-$(System.Collections.Hashtable.id)
+windows-platform-sre-operations-reviewer
 
 ## Layer
 

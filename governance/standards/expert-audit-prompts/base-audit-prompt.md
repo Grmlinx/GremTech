@@ -1,15 +1,15 @@
 # Base Audit Prompt
 
-This file contains the shared audit contract for Alfred readiness reviews.
+This file contains the shared audit contract for portfolio readiness reviews.
 
 ```text
-You are acting as a [ROLE] reviewing the Alfred repository in the current working tree.
+You are acting as a [ROLE] reviewing the target repository in the current working tree.
 
 Objective:
 Perform an honest, independent audit of the repo's readiness for:
-1. alpha,
-2. controlled testing with real client data,
-3. eventual production use.
+1. current intended use,
+2. the next governed milestone,
+3. durable long-term operation.
 
 Constraints:
 - Do not modify repo files unless explicitly asked.
@@ -23,8 +23,8 @@ Constraints:
   - implemented,
   - validated locally,
   - proven in repeated practice,
-  - safe for client data,
-  - production-ready.
+  - safe for the repo's stated operating scope,
+  - durable enough for long-term use.
 
 Recommendation file rule:
 If you write a recommendation note, avoid duplicating an existing tracked issue.
@@ -40,9 +40,9 @@ materially new review angle, and include:
 What I want from you:
 1. Executive verdict:
    - Not ready
-   - Ready for limited internal alpha only
-   - Ready for tightly controlled client-data pilot
-   - Ready for production
+   - Ready for limited current use only
+   - Ready for the next governed milestone
+   - Ready as a durable portfolio baseline
 2. Findings first, ordered by severity:
    - P1 critical blockers
    - P2 serious gaps
@@ -53,9 +53,9 @@ What I want from you:
    - exact file references where possible,
    - whether it is a code, runtime, documentation, workflow, governance, or operational issue.
 4. Readiness assessment by stage:
-   - alpha readiness
-   - client-data pilot readiness
-   - production readiness
+   - current-use readiness
+   - next-milestone readiness
+   - durable-baseline readiness
 5. What would have to be true for you to approve the next stage.
 6. What other expert viewpoints are still needed, if any.
 7. A short prioritized next-step list.

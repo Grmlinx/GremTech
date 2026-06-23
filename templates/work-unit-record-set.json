@@ -1,0 +1,19 @@
+{
+  "schema_version": "work-unit-record-set.v1",
+  "record_sets": [
+    {
+      "id": "core",
+      "summary": "Minimum durable work-unit records for governed resumption and review.",
+      "when_to_use": "Use for work units that need durable state but not domain-specific custody handling.",
+      "paths": [
+        "01_intake/action-log.md",
+        "01_intake/decision-log.md",
+        "01_intake/errors-and-recoveries.md",
+        "01_intake/invariant-checks.md",
+        "06_exports/",
+        "07_status/current-status.json",
+        "07_status/run-end-log.md"
+      ]
+    }
+  ]
+}

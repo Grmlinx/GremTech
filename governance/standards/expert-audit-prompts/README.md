@@ -1,9 +1,15 @@
 # Expert Audit Prompts
 
 Purpose:
-- formalize the recurring expert-review prompts used to assess Alfred
+- formalize the recurring expert-review prompts used to assess governed repos
 - keep the canonical prompt pack under governance instead of recommendation staging
 - keep the recommendation-output path explicit: `memory\sensory\Recommendations`
+
+Current state:
+- `base-audit-prompt.md` is now the portfolio-generic base contract
+- most role-specific prompt files are still seeded from Alfred wording and
+  should be treated as reference pack material until prompt parameterization is
+  completed in a later phase
 
 Files:
 - [base-audit-prompt.md](base-audit-prompt.md)
@@ -27,6 +33,8 @@ Files:
 Usage:
 - use `base-audit-prompt.md` when you want the shared review contract by itself
 - use any role-specific file when you want a ready-to-paste standalone prompt
+- when using the seeded role-specific prompts outside Alfred, substitute the
+  target repo, repo archetype, and milestone language deliberately
 - if the expert writes a recommendation note, it should first check the current issue map and backlog files; update or reference existing findings when they
   cover the same issue, and create a new file under
   `memory\sensory\Recommendations` only for a materially new review angle
@@ -57,4 +65,5 @@ Coverage:
 
 - [Recommendation intake folder](../../../memory/sensory/Recommendations/README.md)
 - [Expert recommendation issue map](../../../memory/sensory/Recommendations/2026-05-29-expert-recommendation-issue-map.md)
+- [Recommendation tracking standard](../recommendation-tracking-standard.md)
 - [Governance standards](../README.md)

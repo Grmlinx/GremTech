@@ -1,4 +1,4 @@
-﻿# System Overview
+# System Overview
 
 ## Purpose
 
@@ -7,11 +7,21 @@ Describe what GremTech is supposed to become.
 ## Target Shape
 
 GremTech is intended to become a governed software-development agency that can:
-- inspect other repositories
+- classify other repositories by archetype
+- apply the right team and review lanes to each repo type
 - launch bounded audits through specialist agents
 - preserve hierarchy during multi-agent review
 - synthesize recommendations without losing source attribution
-- hold recommendation intake, issue maps, and review backlogs
+- hold portfolio profiles, onboarding guidance, and reusable standards
+- keep long-term references and durable learning across projects
+- support thin cross-harness adapter surfaces without duplicating core workflow logic
+- distinguish default capabilities from optional ones
+- keep config and secret boundaries explicit across runtime surfaces
+- define explicit operator surfaces, isolation posture, and scheduled-work rules
+- prove readiness through layered validation and smoke gates
+- keep critical docs aligned through documentation-sync contracts
+- govern self-audit through durable top-band review loops
+- provide a durable startup and governance model for future tools
 
 ## Non-Goals In This Scaffold
 
@@ -23,8 +33,17 @@ GremTech is intended to become a governed software-development agency that can:
 
 ## What Exists Now
 
-- seeded prompt pack
+- startup contract
+- `CTO Desk` intake model
 - explicit hierarchy
-- explicit decision rights
+- team charter
+- decision rights
+- role-activation policy and routing matrix
+- repo archetypes
+- development lifecycle standards
+- delivery, escalation, and gating standards
+- portfolio registry and repo profiles
+- delivery work-package lane for active rollout targets
+- agency-learning memory lanes and project-inspiration capture
 - output path for recommendations
-- templates for audit artifacts
+- templates for audit artifacts and onboarding

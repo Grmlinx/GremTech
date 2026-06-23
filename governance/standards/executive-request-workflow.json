@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "name": "cto_delivery_workflow",
+  "front_door": "cto_desk",
+  "front_door_roles": [
+    "project-manager",
+    "product-architect",
+    "governance-officer"
+  ],
+  "phases": [
+    {
+      "id": "intake",
+      "owner": "cto_desk",
+      "artifact": "executive-intake-brief",
+      "asks_user_only_if": [
+        "target repo is materially ambiguous",
+        "objective is unclear",
+        "authority boundary is unclear",
+        "success condition is unclear"
+      ]
+    },
+    {
+      "id": "triage",
+      "owner": "project-manager",
+      "artifact": "activated-role-set",
+      "outputs": [
+        "repo archetype",
+        "workstream type",
+        "runtime posture confirmation"
+      ]
+    },
+    {
+      "id": "research",
+      "owner": "product-architect",
+      "artifact": "research-brief"
+    },
+    {
+      "id": "design",
+      "owner": "product-architect",
+      "artifact": "implementation-plan"
+    },
+    {
+      "id": "governance_gate",
+      "owner": "governance-officer",
+      "artifact": "governance-decision",
+      "can_block": true
+    },
+    {
+      "id": "implementation",
+      "owner": "implementation-team",
+      "artifact": "implementation-handoff"
+    },
+    {
+      "id": "qa_gate",
+      "owner": "qa-release-engineering-reviewer",
+      "artifact": "qa-gate",
+      "can_block": true
+    },
+    {
+      "id": "release_decision",
+      "owner": "project-manager",
+      "artifact": "release-decision",
+      "can_block": true
+    },
+    {
+      "id": "closeout",
+      "owner": "cto_desk",
+      "artifact": "operator-summary"
+    }
+  ]
+}

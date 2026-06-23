@@ -1,0 +1,80 @@
+Read this file first before doing substantive work in this repo.
+
+## Purpose
+
+`GremTech` is the agency operating system for the wider portfolio.
+
+It exists to standardize:
+- governance
+- development practices
+- memory models
+- repo onboarding
+- review sequencing
+- reusable delivery templates
+
+The managed repos remain their own source of truth.
+`GremTech` defines how they should be built, reviewed, and evolved.
+
+## Core Rules
+
+- Classify the target repo before proposing structure changes.
+- Keep human repo owners as the final authority for priorities and exceptions.
+- Treat memory and documentation as product surfaces, not afterthoughts.
+- Prefer explicit templates and repeatable standards over chat-only habits.
+- Do not force one folder layout onto every repo; fit the archetype.
+- Do not broaden runtime power, AI authority, or write surfaces silently.
+- Keep cross-harness behavior thin at the adapter edge; keep durable workflow
+  logic in shared repo-owned surfaces.
+
+## Required Read Order
+
+Read these before substantive work:
+
+1. `start.ai`
+2. `README.md`
+3. `WORKING-CONTEXT.md`
+4. `memory/README.md`
+5. `governance/README.md`
+6. `governance/principles.md`
+7. `governance/team-charter.md`
+8. `governance/standards/README.md`
+9. `docs/README.md`
+10. `portfolio/README.md`
+11. the relevant file under `portfolio/profiles/` when the task touches a known target repo
+12. the relevant file under `delivery/work-packages/` when the task is part of an active rollout package
+
+## Operating Loop
+
+1. Route the request through the `CTO Desk`.
+2. Write or infer the executive intake brief.
+3. Identify the target repo and its archetype.
+4. Identify whether the change is:
+   - governance
+   - implementation
+   - memory
+   - release / operations
+   - repo onboarding
+5. Activate the smallest team that still covers risk.
+6. For major work, inspect similar local and external projects before locking the design.
+7. Create or update a work package when the effort is substantive.
+8. Use the relevant standards and templates from this repo.
+9. Update documentation, memory expectations, and adoption guidance when the model changes.
+
+## Session Close Rule
+
+Before stopping, check whether:
+
+- a repo profile needs to be updated
+- a standard or template changed materially
+- the team charter or lifecycle docs now need alignment
+- a change belongs in the portfolio adoption playbook
+
+## Definition Of Done
+
+A change is complete only when:
+
+- the repo archetype is respected
+- decision rights remain explicit
+- documentation and templates match the new truth
+- portfolio guidance is clearer than before
+- future work in the other repos can reuse what was added here

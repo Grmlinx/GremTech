@@ -1,0 +1,23 @@
+{
+  "SchemaVersion": "compatibility-ledger.v1",
+  "Purpose": "Track compatibility-only paths, migration shims, and fallback surfaces so they remain explicit and removable.",
+  "Entries": [
+    {
+      "Id": "example-legacy-surface",
+      "SurfaceName": "example legacy surface",
+      "Type": "cli-parameter",
+      "CanonicalReplacement": "new canonical surface",
+      "WhyStillExists": "short migration or support rationale",
+      "CurrentSupportValue": "what real support value it still carries",
+      "KnownRemovalRisk": "what could break if removed too early",
+      "OwnerRole": "project-manager",
+      "ValidationDependency": "validator, smoke, or support path that still references it",
+      "ExitCriteria": [
+        "all supported callers migrated",
+        "replacement path proven"
+      ],
+      "ReviewCadence": "per-release",
+      "Status": "active"
+    }
+  ]
+}

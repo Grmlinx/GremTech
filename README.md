@@ -1,43 +1,77 @@
-﻿# GremTech
+# GremTech
 
-GremTech is the seed repository for a governed software-development agency
-model.
+`GremTech` is the governance and orchestration layer for the wider development
+portfolio.
 
-Its job is to hold the role system, prompt pack, hierarchy, review contracts,
-and output scaffolding for multi-agent software audits, architecture reviews,
-and delivery oversight across other repositories.
+Its job is to standardize how repos such as `alfred`, `home-lab`, `Doofus`,
+`gremlin-git`, and `Gremoire` are:
+- classified
+- governed
+- reviewed
+- documented
+- given durable memory and startup contracts
 
-The target repositories remain the source of truth.
-GremTech is the governance and orchestration layer around those repos.
+The managed repos remain their own source of truth.
+`GremTech` carries the reusable operating system around them.
 
-## Current Scope
+## What Exists Now
 
-This scaffold is the first pass only.
-
-It currently provides:
-- a copied expert prompt pack seeded from Alfred
-- an agent registry built from those prompts
-- a hierarchy with governance at the top and UI/UX at the bottom
-- recommendation intake and issue-mapping structure
-- documentation for how agents should audit independently, escalate, and talk
-  to each other
+`GremTech` now provides:
+- an explicit agency team and decision model
+- an explicit CTO Desk routing and role-activation model
+- a delivery work-package lane for active rollout targets
+- explicit validation, readiness, and release-gate standards
+- documentation-sync discipline for critical startup and operator paths
+- a governed repo-audit control loop for portfolio self-review
+- explicit release-posture rules for supported versus bounded capability
+- a standard for when governance surfaces should become machine-readable
+- an Alfred-class platform blueprint for future governed AI product builds
+- runtime-core standards for work units, control-plane state, approvals,
+  workers, and review platforms
+- explicit external-framework, UI/UX, and CLI-tool standards
+- an explicit infrastructure-platform standard for repos like `home-lab`
+- an agency-learning memory model with references and long-term lessons
+- repo archetypes and onboarding standards
+- a development lifecycle for cross-repo work
+- a standard for memory-model selection
+- a harness portability and workflow-surface policy
+- a machine-readable portfolio registry
+- target-repo profiles for the current repo estate
+- reusable templates for startup contracts and onboarding
+- a seeded expert-audit prompt pack and agent registry
 
 It does not yet provide:
 - a runtime orchestration service
 - autonomous agent execution
 - persistent queue management
 - database-backed audit state
+- parameterized prompt rendering across every role prompt
 - inter-agent messaging infrastructure
 
-## Operating Principles
+## Portfolio Targets
 
-- governance first
-- target repo is the source of truth
-- no hidden authority
-- no silent scope creep
-- recommendations must be traceable
-- blockers must escalate upward
-- downstream implementation agents do not overrule upstream governance agents
+Current profiled repos:
+- `alfred`
+- `home-lab`
+- `Doofus`
+- `gremlin-git`
+- `Gremoire`
+
+See:
+- [portfolio/README.md](portfolio/README.md)
+- [portfolio/targets.json](portfolio/targets.json)
+- [docs/repo-adoption-playbook.md](docs/repo-adoption-playbook.md)
+
+## Cross-Harness Lane
+
+`GremTech` now also treats cross-harness support as a first-class concern.
+
+See:
+- [AGENTS.md](AGENTS.md)
+- [WORKING-CONTEXT.md](WORKING-CONTEXT.md)
+- [governance/standards/harness-portability-standard.md](governance/standards/harness-portability-standard.md)
+- [governance/standards/workflow-surface-policy.md](governance/standards/workflow-surface-policy.md)
+- [docs/harness-portability-model.md](docs/harness-portability-model.md)
 
 ## Structure
 
@@ -45,61 +79,42 @@ It does not yet provide:
 GremTech/
 - agents/
   - registry/
+- delivery/
+  - work-packages/
 - docs/
 - governance/
   - standards/
     - expert-audit-prompts/
 - memory/
   - sensory/
-    - Recommendations/
+  - working/
+  - References/
+  - long-term/
+  - prospective/
+  - consolidation/
+- portfolio/
+  - profiles/
 - templates/
 ```
 
-## Agent Layers
+## Operating Rule
 
-1. Governance
-   - governance officer
-2. Leadership
-   - project manager
-   - product architect
-3. Risk and assurance
-   - security engineer
-   - privacy / legal / compliance reviewer
-   - licensing / procurement reviewer
-   - QA / release engineering reviewer
-   - Windows platform / SRE / operations reviewer
-4. Implementation and platform
-   - DevOps engineer
-   - AI engineer
-   - code reviewer
-   - prompt engineer
-5. Domain specialists
-   - DFIR expert
-   - M365 / Entra administrator
-   - incident response operations / client delivery reviewer
-6. Experience
-   - UI engineer
-
-Governance sits at the top.
-UI/UX sits at the bottom by design, because presentation and interaction should
-consume already-approved constraints rather than define them.
-
-## Recommendation Output Path
-
-Recommendation notes produced by agents should land in:
-- `memory\sensory\Recommendations`
-
-Before creating a new recommendation file, agents should:
-- check the issue map
-- check the recommendation README
-- reference existing findings where possible
-- create a new note only for a materially new review angle
+Do not standardize by flattening every repo into the same tree.
+Standardize by:
+- choosing the right archetype
+- activating the right review lanes
+- using the right memory pattern
+- reusing the right templates
 
 ## Start Here
 
-- [governance/principles.md](governance/principles.md)
-- [governance/agent-hierarchy.md](governance/agent-hierarchy.md)
-- [agents/registry/agent-topology.json](agents/registry/agent-topology.json)
-- [governance/standards/expert-audit-prompts/README.md](governance/standards/expert-audit-prompts/README.md)
-- [memory/sensory/Recommendations/README.md](memory/sensory/Recommendations/README.md)
-- [docs/implementation-roadmap.md](docs/implementation-roadmap.md)
+- [start.ai](start.ai)
+- [governance/README.md](governance/README.md)
+- [governance/team-charter.md](governance/team-charter.md)
+- [docs/cto-delivery-workflow.md](docs/cto-delivery-workflow.md)
+- [docs/executive-routing-model.md](docs/executive-routing-model.md)
+- [memory/README.md](memory/README.md)
+- [governance/standards/README.md](governance/standards/README.md)
+- [docs/README.md](docs/README.md)
+- [portfolio/README.md](portfolio/README.md)
+- [delivery/README.md](delivery/README.md)

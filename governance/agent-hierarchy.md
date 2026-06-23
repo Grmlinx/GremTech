@@ -1,9 +1,13 @@
-﻿# Agent Hierarchy
+# Agent Hierarchy
 
 ## Purpose
 
 Define the authority stack for GremTech so independent audits do not collapse
 into flat, conflicting agent opinions.
+
+Activation rule:
+- classify the repo archetype first
+- then activate only the layers and specialists the repo actually needs
 
 ## Layers
 
@@ -51,6 +55,8 @@ Authority:
 - audits implementation quality and runtime shape
 - can propose fixes and challenge assumptions
 - cannot overrule higher-layer governance or risk decisions
+- cannot use prompts or implementation convenience to create new authority by
+  accident
 
 ### Layer 5: Domain Specialists
 

@@ -1,0 +1,17 @@
+{
+  "schema_version": "action-request.v1",
+  "action_request_id": "<id>",
+  "work_unit_id": "<work-unit-id>",
+  "work_unit_root": "<work-unit-root>",
+  "purpose": "<why this action is needed>",
+  "authority_basis": "<authority>",
+  "operator": "<operator>",
+  "target_scope_summary": "<scope>",
+  "time_window_or_basis": "<time-basis-or-not-applicable>",
+  "operation_class": "<operation-class>",
+  "allowed_action_id": "<allowlisted-action-id>",
+  "expected_outputs": "<expected outputs>",
+  "credential_boundary": "<credential-boundary-statement>",
+  "approval_required": true,
+  "limitations": "<limitations>"
+}

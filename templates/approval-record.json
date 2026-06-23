@@ -1,0 +1,11 @@
+{
+  "schema_version": "approval-record.v1",
+  "approval_id": "<approval-id>",
+  "request_id": "<action-request-id>",
+  "decision": "approve",
+  "approver": "<approver>",
+  "decision_basis": "<why approved or rejected>",
+  "approval_timestamp": "<iso-8601>",
+  "request_hash": "<exact-request-hash>",
+  "expires_at": "<iso-8601-or-empty>"
+}

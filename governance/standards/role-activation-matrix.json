@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "front_door": "cto_desk",
+  "default_artifacts": {
+    "intake": "templates/executive-intake-brief.md",
+    "activation": "templates/role-activation-record.md",
+    "research": "templates/research-brief.md",
+    "design": "templates/implementation-plan.md",
+    "governance": "templates/governance-decision.md",
+    "qa": "templates/qa-gate.md",
+    "release": "templates/release-decision.md"
+  },
+  "workstreams": {
+    "research": {
+      "owners": [
+        "project-manager",
+        "product-architect"
+      ],
+      "default_roles": [
+        "code-reviewer"
+      ],
+      "required_artifacts": [
+        "executive-intake-brief",
+        "role-activation-record",
+        "research-brief"
+      ],
+      "blocking_gates": []
+    },
+    "implementation": {
+      "owners": [
+        "project-manager",
+        "product-architect"
+      ],
+      "default_roles": [
+        "code-reviewer",
+        "qa-release-engineering-reviewer"
+      ],
+      "required_artifacts": [
+        "executive-intake-brief",
+        "role-activation-record",
+        "research-brief",
+        "implementation-plan",
+        "qa-gate"
+      ],
+      "blocking_gates": [
+        "qa"
+      ]
+    },
+    "governance": {
+      "owners": [
+        "governance-officer"
+      ],
+      "default_roles": [
+        "project-manager",
+        "product-architect"
+      ],
+      "required_artifacts": [
+        "executive-intake-brief",
+        "role-activation-record",
+        "governance-decision"
+      ],
+      "blocking_gates": [
+        "governance"
+      ]
+    },
+    "release_qa": {
+      "owners": [
+        "qa-release-engineering-reviewer"
+      ],
+      "default_roles": [
+        "project-manager",
+        "code-reviewer"
+      ],
+      "required_artifacts": [
+        "executive-intake-brief",
+        "role-activation-record",
+        "qa-gate",
+        "release-decision"
+      ],
+      "blocking_gates": [
+        "qa",
+        "release"
+      ]
+    },
+    "repo_onboarding": {
+      "owners": [
+        "project-manager",
+        "product-architect",
+        "governance-officer"
+      ],
+      "default_roles": [],
+      "required_artifacts": [
+        "executive-intake-brief",
+        "role-activation-record",
+        "implementation-plan",
+        "governance-decision",
+        "release-decision"
+      ],
+      "blocking_gates": [
+        "governance",
+        "release"
+      ]
+    },
+    "runtime_automation": {
+      "owners": [
+        "project-manager",
+        "product-architect"
+      ],
+      "default_roles": [
+        "devops-engineer",
+        "security-engineer",
+        "qa-release-engineering-reviewer"
+      ],
+      "required_artifacts": [
+        "executive-intake-brief",
+        "role-activation-record",
+        "research-brief",
+        "implementation-plan",
+        "governance-decision",
+        "qa-gate",
+        "release-decision"
+      ],
+      "blocking_gates": [
+        "governance",
+        "qa",
+        "release"
+      ]
+    },
+    "incident_remediation": {
+      "owners": [
+        "project-manager"
+      ],
+      "default_roles": [
+        "security-engineer",
+        "windows-platform-sre-operations-reviewer",
+        "devops-engineer"
+      ],
+      "required_artifacts": [
+        "executive-intake-brief",
+        "role-activation-record",
+        "research-brief",
+        "implementation-plan",
+        "qa-gate",
+        "release-decision"
+      ],
+      "blocking_gates": [
+        "qa"
+      ]
+    }
+  },
+  "triggers": {
+    "changes_ai_contract": {
+      "add_roles": [
+        "prompt-engineer",
+        "governance-officer"
+      ],
+      "add_artifacts": [
+        "governance-decision"
+      ]
+    },
+    "touches_secrets_or_authority": {
+      "add_roles": [
+        "security-engineer"
+      ],
+      "add_artifacts": [
+        "governance-decision"
+      ]
+    },
+    "changes_packaging_ci_or_runtime": {
+      "add_roles": [
+        "devops-engineer",
+        "qa-release-engineering-reviewer"
+      ],
+      "add_artifacts": [
+        "qa-gate"
+      ]
+    },
+    "changes_operator_experience_materially": {
+      "add_roles": [
+        "ui-engineer"
+      ],
+      "add_artifacts": []
+    },
+    "changes_scope_power_or_policy": {
+      "add_roles": [
+        "governance-officer"
+      ],
+      "add_artifacts": [
+        "governance-decision"
+      ]
+    },
+    "touches_windows_hosts_or_recovery": {
+      "add_roles": [
+        "windows-platform-sre-operations-reviewer"
+      ],
+      "add_artifacts": []
+    },
+    "touches_regulated_or_policy_bound_data": {
+      "add_roles": [
+        "privacy-legal-compliance-reviewer"
+      ],
+      "add_artifacts": [
+        "governance-decision"
+      ]
+    },
+    "introduces_vendor_or_license_tradeoff": {
+      "add_roles": [
+        "licensing-procurement-reviewer"
+      ],
+      "add_artifacts": []
+    },
+    "touches_m365_or_entra": {
+      "add_roles": [
+        "m365-entra-administrator"
+      ],
+      "add_artifacts": []
+    },
+    "touches_forensics_or_defensibility": {
+      "add_roles": [
+        "dfir-expert",
+        "incident-response-operations-client-delivery-reviewer"
+      ],
+      "add_artifacts": []
+    },
+    "spans_multiple_repos": {
+      "add_roles": [
+        "project-manager",
+        "governance-officer"
+      ],
+      "add_artifacts": [
+        "implementation-plan"
+      ]
+    }
+  }
+}

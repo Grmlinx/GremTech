@@ -1,31 +1,34 @@
-﻿# GremTech Governance Principles
+# GremTech Governance Principles
 
 ## Purpose
 
-Keep GremTech aligned as a governed agency model instead of letting it drift
-into an unbounded multi-agent experiment.
+Keep `GremTech` aligned as a governed agency operating system instead of
+letting it drift into a pile of prompts, templates, and chat habits.
 
 ## Principles
 
 1. Governance first
-   - Governance defines what is allowed before implementation agents optimize
-     how to do it.
-2. Target repo is the source of truth
-   - GremTech reviews, plans, and records recommendations. It does not redefine
-     client-repo truth by itself.
-3. No hidden authority
-   - Every agent must have clear powers, limits, and escalation paths.
-4. No silent scope creep
-   - New review surfaces, agent powers, or workflow breadth must be explicitly
-     absorbed into governance or rejected.
-5. Recommendations are traceable
-   - Findings, conflicts, and backlog items must remain linkable and reviewable.
-6. Upstream agents can block downstream work
-   - Governance, security, privacy, and QA can block.
-   - UI/UX, code, and prompt roles can recommend, but not overrule.
-7. Runtime and prompts must stay aligned
-   - If the future runtime behaves more loosely than the prompt contract, the
-     runtime is wrong or the contract must be updated deliberately.
-8. Boring architecture beats clever ambiguity
-   - Prefer explicit orchestration, explicit queues, explicit outputs, and
-     explicit review state.
+   - define allowed behavior before optimizing delivery speed
+2. Repo archetype before repo structure
+   - choose the right operating model before copying folders or workflows
+3. Target repo is the source of truth
+   - `GremTech` standardizes and guides; it does not replace repo-local truth
+4. Human authority stays explicit
+   - repo owners decide priorities and exceptions
+   - AI roles and prompts do not create hidden authority
+5. Memory is a product surface
+   - current truth, durable lessons, and future commitments must be
+     deliberately stored and retrievable
+6. No silent scope creep
+   - new powers, new write surfaces, and new workflow lanes must be approved or
+     rejected explicitly
+7. Recommendations and decisions are traceable
+   - findings, playbooks, and portfolio guidance must stay reviewable and
+     linkable
+8. Proof before promotion
+   - a pattern should not become a shared standard just because it worked once
+9. Boring explicit systems beat clever ambiguity
+   - prefer explicit contracts, explicit ownership, and explicit review gates
+10. Shared source, thin adapters
+   - keep durable workflow behavior in shared repo-owned surfaces
+   - keep harness-specific files thin and replaceable

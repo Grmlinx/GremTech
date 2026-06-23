@@ -26,4 +26,7 @@ Each recommendation note should include:
 
 - [2026-05-29-expert-recommendation-issue-map.md](2026-05-29-expert-recommendation-issue-map.md)
 - [2026-05-30-audit-backlog.md](2026-05-30-audit-backlog.md)
+- [../../../governance/standards/recommendation-tracking-standard.md](../../../governance/standards/recommendation-tracking-standard.md)
 - [../../../templates/recommendation-note.md](../../../templates/recommendation-note.md)
+- [../../../templates/recommendation-issue-map.md](../../../templates/recommendation-issue-map.md)
+- [../../../templates/recommendation-backlog.md](../../../templates/recommendation-backlog.md)

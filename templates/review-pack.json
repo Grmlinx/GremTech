@@ -1,0 +1,12 @@
+{
+  "schema_version": "review-pack.v1",
+  "work_unit_id": "<work-unit-id>",
+  "generated_at": "<iso-8601>",
+  "generated_by": "<generator>",
+  "status": "<review-status>",
+  "summary": "<high-level-summary>",
+  "artifacts": [],
+  "diagnostics": [],
+  "limitations": [],
+  "boundary_note": "Derived review surface only. Not raw source material, not approval, not execution authority."
+}

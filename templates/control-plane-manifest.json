@@ -1,0 +1,20 @@
+{
+  "schema_version": "control-plane-manifest.v1",
+  "mode": "local-control-plane",
+  "authoritative_runtime_root": "<configured-runtime-root>",
+  "work_unit_root": "<configured-work-unit-root>",
+  "state_classes": [
+    "work_units",
+    "jobs",
+    "workers",
+    "locks",
+    "tasks",
+    "diagnostics",
+    "approvals"
+  ],
+  "visibility_surfaces": [
+    "root-cli",
+    "read-only-api",
+    "read-only-ui"
+  ]
+}

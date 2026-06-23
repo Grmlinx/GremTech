@@ -1,4 +1,4 @@
-﻿# Agent Conversation Model
+# Agent Conversation Model
 
 ## Purpose
 
@@ -21,7 +21,9 @@ Every future inter-agent message should carry:
 - sender
 - recipient
 - target repo
+- repo archetype
 - review scope
+- milestone being assessed
 - finding summary
 - evidence references
 - severity

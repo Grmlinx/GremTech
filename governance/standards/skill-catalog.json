@@ -1,0 +1,72 @@
+{
+  "CatalogVersion": "2026-06-14b",
+  "Purpose": "Machine-readable index of GremTech repo-owned skill packs.",
+  "RegistryPath": "skills/registry",
+  "LifecycleStandard": "governance/standards/skill-pack-standard.md",
+  "TieringStandard": "governance/standards/capability-tiering-standard.md",
+  "Skills": [
+    {
+      "Id": "repo-semantic-auditor",
+      "Path": "skills/registry/repo-semantic-auditor/SKILL.md",
+      "Domain": "knowledge-operations",
+      "Status": "drafted",
+      "Tier": "optional",
+      "OwnerRole": "governance-officer",
+      "Summary": "Audits governed repos for semantic drift across prose, control files, validators, runtime surfaces, and release posture."
+    },
+    {
+      "Id": "release-proof-and-readiness-auditor",
+      "Path": "skills/registry/release-proof-and-readiness-auditor/SKILL.md",
+      "Domain": "release-governance",
+      "Status": "drafted",
+      "Tier": "optional",
+      "OwnerRole": "qa-release-engineering-reviewer",
+      "Summary": "Evaluates whether release and readiness claims are backed by executable proof, clear support-state language, and sync discipline."
+    },
+    {
+      "Id": "repo-owned-skill-pack-authoring",
+      "Path": "skills/registry/repo-owned-skill-pack-authoring/SKILL.md",
+      "Domain": "agency-development",
+      "Status": "drafted",
+      "Tier": "optional",
+      "OwnerRole": "product-architect",
+      "Summary": "Designs and tightens repo-owned skill packs so repeated work becomes a governed reusable capability surface."
+    },
+    {
+      "Id": "operator-ui-product-review",
+      "Path": "skills/registry/operator-ui-product-review/SKILL.md",
+      "Domain": "product-design",
+      "Status": "drafted",
+      "Tier": "optional",
+      "OwnerRole": "ui-engineer",
+      "Summary": "Reviews dense operational interfaces for information hierarchy, accessibility, action safety, and boundary honesty."
+    },
+    {
+      "Id": "governed-runtime-core-builder",
+      "Path": "skills/registry/governed-runtime-core-builder/SKILL.md",
+      "Domain": "runtime-engineering",
+      "Status": "drafted",
+      "Tier": "optional",
+      "OwnerRole": "product-architect",
+      "Summary": "Designs and stages the Alfred-class runtime core across state, work-unit, worker, approval, and review boundaries."
+    },
+    {
+      "Id": "compatibility-retirement-planner",
+      "Path": "skills/registry/compatibility-retirement-planner/SKILL.md",
+      "Domain": "release-governance",
+      "Status": "drafted",
+      "Tier": "optional",
+      "OwnerRole": "governance-officer",
+      "Summary": "Plans staged retirement of compatibility shims, redirects, and fallback lanes without weakening real support posture."
+    },
+    {
+      "Id": "pattern-assimilation-analyst",
+      "Path": "skills/registry/pattern-assimilation-analyst/SKILL.md",
+      "Domain": "knowledge-operations",
+      "Status": "drafted",
+      "Tier": "optional",
+      "OwnerRole": "product-architect",
+      "Summary": "Researches external systems, assesses lifecycle and support posture, and turns the strengthening traits into durable local improvements."
+    }
+  ]
+}

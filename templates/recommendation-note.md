@@ -1,10 +1,12 @@
-﻿# Recommendation Note Template
+# Recommendation Note Template
 
 From:
 Date:
 For:
 Purpose:
 Scope:
+Repo Archetype:
+Milestone Assessed:
 
 ## Executive Verdict
 

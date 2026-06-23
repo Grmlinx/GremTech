@@ -1,0 +1,24 @@
+{
+  "schema_version": "worker-classes.v1",
+  "workers": [
+    {
+      "id": "core-worker",
+      "class": "core",
+      "accepted_names": [
+        "core-worker"
+      ],
+      "execution_mode": "standard-user",
+      "summary": "Runs bounded deterministic background work.",
+      "boundary_statement": "Must preserve source-versus-derived boundaries and record limitations explicitly.",
+      "capabilities": [
+        "status-refresh"
+      ],
+      "default_job_types": [
+        "status-refresh"
+      ],
+      "default_locks": [
+        "work-unit-write:<work-unit-id>"
+      ]
+    }
+  ]
+}

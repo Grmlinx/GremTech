@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "managed_from_repo": "GremTech",
+  "baseline_required_surfaces": [
+    "README.md",
+    "start.ai",
+    "repo archetype",
+    "control surface",
+    "chosen memory pattern",
+    "documentation front door"
+  ],
+  "targets": [
+    {
+      "id": "alfred",
+      "path": "C:\\Users\\anand\\OneDrive\\Study\\Cybersecurity\\GitHub\\alfred",
+      "archetype": "governed-ai-product-platform",
+      "change_posture": "observe-only",
+      "memory_profile": "full-operational-memory",
+      "cross_harness_priority": "high",
+      "runtime_posture": "explicit-multi-surface-governed-runtime",
+      "recommended_context_surfaces": [
+        "README.md",
+        "start.ai",
+        "AGENTS.md"
+      ],
+      "baseline_status": "strong",
+      "required_roles": [
+        "governance-officer",
+        "project-manager",
+        "product-architect",
+        "security-engineer",
+        "qa-release-engineering-reviewer",
+        "devops-engineer",
+        "code-reviewer",
+        "prompt-engineer",
+        "dfir-expert",
+        "m365-entra-administrator"
+      ],
+      "next_actions": [
+        "parameterize shared audit prompts for cross-repo reuse",
+        "keep repo profile aligned with new runtime surfaces without active rollout work"
+      ]
+    },
+    {
+      "id": "home-lab",
+      "path": "C:\\Users\\anand\\OneDrive\\Study\\Cybersecurity\\GitHub\\home-lab",
+      "archetype": "infrastructure-platform-repo",
+      "change_posture": "defer-active-rollout",
+      "memory_profile": "governance-centered-operational-memory",
+      "cross_harness_priority": "medium",
+      "runtime_posture": "operator-driven-automation-with-explicit-execution-boundaries",
+      "recommended_context_surfaces": [
+        "README.md",
+        "start.ai"
+      ],
+      "baseline_status": "strong",
+      "required_roles": [
+        "governance-officer",
+        "project-manager",
+        "product-architect",
+        "security-engineer",
+        "qa-release-engineering-reviewer",
+        "windows-platform-sre-operations-reviewer",
+        "devops-engineer",
+        "code-reviewer"
+      ],
+      "next_actions": [
+        "keep durable mitigations documented in repo-managed memory",
+        "align future review gates with the GremTech lifecycle without making it the active rollout target"
+      ]
+    },
+    {
+      "id": "doofus",
+      "path": "C:\\Users\\anand\\OneDrive\\Study\\Cybersecurity\\GitHub\\Doofus",
+      "archetype": "operator-tool-product",
+      "change_posture": "active-rollout-target",
+      "memory_profile": "lightweight-product-memory",
+      "cross_harness_priority": "medium",
+      "runtime_posture": "local-tooling-first-background-runtime-optional",
+      "recommended_context_surfaces": [
+        "README.md",
+        "start.ai"
+      ],
+      "baseline_status": "partial",
+      "required_roles": [
+        "project-manager",
+        "product-architect",
+        "code-reviewer",
+        "qa-release-engineering-reviewer",
+        "devops-engineer"
+      ],
+      "next_actions": [
+        "add start.ai",
+        "add a light governance and release-decision surface",
+        "execute the governed baseline work package from GremTech"
+      ]
+    },
+    {
+      "id": "gremlin-git",
+      "path": "C:\\Users\\anand\\OneDrive\\Study\\Cybersecurity\\GitHub\\gremlin-git",
+      "archetype": "legacy-tool-estate",
+      "change_posture": "classify-before-expanding",
+      "memory_profile": "lightweight-product-memory",
+      "cross_harness_priority": "low",
+      "runtime_posture": "consolidation-first-no-expanded-runtime-yet",
+      "recommended_context_surfaces": [
+        "README.md",
+        "start.ai"
+      ],
+      "baseline_status": "minimal",
+      "required_roles": [
+        "governance-officer",
+        "project-manager",
+        "product-architect",
+        "code-reviewer",
+        "devops-engineer",
+        "qa-release-engineering-reviewer"
+      ],
+      "next_actions": [
+        "catalog supported versus archived tools",
+        "promote reusable tools into governed repos",
+        "use the GremTech read-only assessment to shape the tool-catalog pass"
+      ]
+    },
+    {
+      "id": "gremoire",
+      "path": "C:\\Users\\anand\\OneDrive\\Study\\Cybersecurity\\GitHub\\Gremoire",
+      "archetype": "human-managed-knowledge-vault",
+      "change_posture": "light-touch-only",
+      "memory_profile": "human-vault-memory",
+      "cross_harness_priority": "low",
+      "runtime_posture": "human-first-manual-by-default",
+      "recommended_context_surfaces": [
+        "README.md",
+        "start.ai"
+      ],
+      "baseline_status": "strong",
+      "required_roles": [
+        "governance-officer",
+        "product-architect",
+        "prompt-engineer"
+      ],
+      "next_actions": [
+        "preserve the human-first vault model",
+        "avoid over-governing note-taking surfaces"
+      ]
+    }
+  ]
+}

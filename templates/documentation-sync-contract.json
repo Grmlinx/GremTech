@@ -1,0 +1,26 @@
+{
+  "contract_version": "1.0",
+  "contracts": [
+    {
+      "id": "startup-contract",
+      "description": "Protect the first-run and operator-entry path.",
+      "checks": [
+        {
+          "path": "start.ai",
+          "required_snippets": [
+            "<critical startup statement>"
+          ],
+          "forbidden_snippets": [
+            "<retired or disallowed instruction>"
+          ]
+        },
+        {
+          "path": "README.md",
+          "required_snippets": [
+            "<current entrypoint guidance>"
+          ]
+        }
+      ]
+    }
+  ]
+}

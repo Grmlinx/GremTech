@@ -1,0 +1,38 @@
+{
+  "schema_version": "proof-path-register.v1",
+  "repo_id": "<repo-id>",
+  "proof_paths": [
+    {
+      "id": "repo-validate",
+      "summary": "Structural repo validation through the primary repo entrypoint.",
+      "proof_class": "structural-validation",
+      "support_state": "supported",
+      "entrypoint": "<repo-specific validation command>",
+      "execution_venue": "ci",
+      "prerequisites": [
+        "<runtime or tool prerequisite>"
+      ],
+      "validates": [
+        "<surface-or-claim>"
+      ],
+      "release_relevance": "required",
+      "evidence_record_path": "templates/release-decision.md"
+    },
+    {
+      "id": "operator-smoke",
+      "summary": "Synthetic operator-path smoke through the real entrypoint.",
+      "proof_class": "synthetic-operator-smoke",
+      "support_state": "maintainer-required",
+      "entrypoint": "<repo-specific smoke command>",
+      "execution_venue": "local",
+      "prerequisites": [
+        "<scratch-state or container prerequisite>"
+      ],
+      "validates": [
+        "<primary operator path>"
+      ],
+      "release_relevance": "required",
+      "evidence_record_path": "templates/qa-gate.md"
+    }
+  ]
+}

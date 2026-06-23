@@ -1,0 +1,14 @@
+{
+  "schema_version": "repo-surface.v1",
+  "repo_id": "<repo-id>",
+  "repo_archetype": "<repo-archetype>",
+  "change_posture": "<observe-only|active-rollout-target|defer>",
+  "startup_contract_path": "start.ai",
+  "documentation_sync_contract_path": "governance/documentation-sync-contract.json",
+  "validation_commands": [
+    "<repo-specific validation command>"
+  ],
+  "primary_entrypoints": [
+    "README.md"
+  ]
+}

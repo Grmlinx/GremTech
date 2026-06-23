@@ -1,0 +1,34 @@
+{
+  "schema_version": "operator-route-contract.v1",
+  "repo_id": "<repo-id>",
+  "routes": [
+    {
+      "id": "cases-dashboard",
+      "path": "/cases",
+      "surface_kind": "dashboard",
+      "scope": "global",
+      "access_mode": "read-only",
+      "smoke_requirement": "required",
+      "notes": "Primary case selection surface."
+    },
+    {
+      "id": "case-workspace",
+      "path": "/cases/:caseId",
+      "surface_kind": "workspace",
+      "scope": "case-scoped",
+      "access_mode": "read-only",
+      "smoke_requirement": "shell-only",
+      "notes": "Case-specific review workspace."
+    },
+    {
+      "id": "legacy-cases-new",
+      "path": "/cases/new",
+      "surface_kind": "redirect",
+      "scope": "global",
+      "access_mode": "read-only",
+      "redirect_target": "/cases",
+      "smoke_requirement": "required",
+      "notes": "Compatibility redirect retained during migration."
+    }
+  ]
+}

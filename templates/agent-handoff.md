@@ -1,10 +1,12 @@
-﻿# Agent Handoff Template
+# Agent Handoff Template
 
 ## Sender
 
 ## Recipient
 
 ## Target Repo
+
+## Repo Archetype
 
 ## Scope
 
@@ -15,3 +17,5 @@
 ## Evidence References
 
 ## Requested Next Action
+
+## Requested Gate Or Decision
